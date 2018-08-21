@@ -1,0 +1,14 @@
+const http = require('http');
+
+module.exports = (str, callback) =>{
+
+if (err)
+	callback(err);
+
+let req = http.get(str, function(res) {
+
+  console.log("Got response: " + res.statusCode);
+}).on('error', function(err) {
+  console.log("Got error: " + e.message);
+}); 
+}
